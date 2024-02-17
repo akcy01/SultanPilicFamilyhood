@@ -1,0 +1,25 @@
+.aboutUsDropdownContent 
+{
+    display: block;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 160px;
+    z-index: 1;
+    top: 100px;
+}
+
+.aboutUsDropdownContent li
+{
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aboutUsDropdownContent 
+{
+    background-color: #f0f0f0;
+} 
