@@ -12,9 +12,20 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
   
+/* HomePageIntroduction */
 .homepage-container
 {
     width: auto;
+}
+
+.vertical-Line1
+{
+    border-left: 13px solid #5d8245;
+    height: 530px;
+    position: absolute;
+    left: 10%;
+    margin-left: -3px;
+    top: 33%;
 }
 
 .homepage-container img
@@ -26,19 +37,30 @@
 .homepage-container h1
 {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    font-size: 100px;
+    font-size: 150px;
+    color: #5d8245;
+}
+
+.homepage-container h3
+{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 110px;
     color: #5d8245;
 }
 
 .homepage-container p 
 {
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 65%;
+    left: 44%;
     transform: translate(-50%, -50%);
     z-index: 1;
     font-size: 40px;
@@ -48,12 +70,89 @@
 .homepage-container button 
 {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 85%;
+    left: 24.3%;
     transform: translate(-50%, -50%);
     z-index: 1;
     font-size: 30px;
+    background-color: #131315; /* Arkaplan rengi */
+    color: #fff; /* Yazı rengi */
+    padding: 11px 70px; /* İç içe içeriği çerçeveye yerleştirme */
+    border-radius: 15px; /* Kenar yuvarlatma */
+    border: none; /* Kenarlık olmadan */
+    cursor: pointer; /* Üzerine geldiğinde imleci değiştirme */
+    transition: background-color 0.3s ease-in-out; /* Arka plan rengi geçiş efekti */
 }
 
+.homepage-container button:hover 
+{
+    background-color: #5d8245; /* Üzerine gelindiğinde arka plan rengini değiştirme */
+}
   
+/* HomePageAboutUs */
   
+.homepage-aboutUs
+{
+    width: auto;
+}
+
+.horizontal-line1
+{
+    border: 1px solid red;
+}
+
+.homepage-aboutUs img
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.homepage-aboutUs h1
+{
+    position: absolute;
+    top: 130%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 70px;
+    color: #5d8245;
+}
+
+.box1
+{
+    position: absolute;
+    left: 8%;
+    top: 133%;
+}
+
+.box1 img
+{
+    width: 30%;
+    height: auto;
+}
+
+.box2
+{
+    position: absolute;
+    left: 8%;
+    top: 170%;
+}
+
+.box2 img
+{
+    width: 30%;
+    height: auto;
+}
+
+.box3
+{
+    position: absolute;
+    left: 38%;
+    top: 139%;
+}
+
+.box3 img
+{
+    width: 30%;
+    height: auto;
+}
