@@ -33,21 +33,24 @@ function Home() {
 
             <div className="homepage-goalsAndMissions">
                 <img src="images/goalsAndMissions.png" />
-
-                <div class="transparent-box history">
-                    <hr className="inner-line" />
-                    <h2>Tarihçe</h2>
-                    <p>Paragraf 1</p>
-                </div>
-                <div class="transparent-box mission">
-                    <hr class="inner-line" />
-                    <h2>Misyonumuz</h2>
-                    <p>Paragraf 1</p>
-                </div>
-                <div class="transparent-box vision">
-                    <hr className="inner-line" />
-                    <h2>Vizyonumuz</h2>
-                    <p>Paragraf 1</p>
+                <div className="goals-container">
+                    <h1>HEDEFLERİMİZ VE MİSYONLARIMIZ</h1>
+                    <h3>asdfqweuırhqıwu qwıuerqwıue qwıueh qwerıu asdfqwe qw qwe qwer qwerqwteasdfas asdfasdfasdfasdf</h3>
+                    <div class="box">
+                        <h2>Tarihçe</h2>
+                        <hr class="inner-line" />
+                        <p>u bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.Bu bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Misyonumuz</h2>
+                        <hr class="inner-line" />
+                        <p>u bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.Bu bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Vizyonumuz</h2>
+                        <hr class="inner-line" />
+                        <p>u bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.Bu bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.</p>
+                    </div>
                 </div>
             </div>
         </div>

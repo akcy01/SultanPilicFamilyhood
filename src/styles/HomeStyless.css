@@ -2,7 +2,7 @@
 {
     width: 100%;
     height: 90vh;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: left;
     flex-direction: column;
@@ -16,6 +16,7 @@
 .homepage-container
 {
     width: auto;
+    display: block;
 }
 
 .vertical-Line1
@@ -26,6 +27,7 @@
     left: 10%;
     margin-left: -3px;
     top: 33%;
+    display: block;
 }
 
 .homepage-container img
@@ -196,59 +198,55 @@
     display: inline-block;
 }
 
-.transparent-box 
+.goals-container 
 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: -50%;
+    text-align: center;
+
+}
+
+.goals-container h1 
+{
+    font-size: 50px;
+    margin-top: -30px;
+    color: #5d8245;
+}
+
+.box 
+{
+    display: inline-block;
     width: 20%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: block;
-    justify-content: center;
-    align-items: center;
+    margin: 100px;
+    vertical-align: top;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.4);
+    height: 65vh;
     border-radius: 30px;
-}
-
-.history 
-{ 
-    top: 40%;
-    left: 10%;
-}
-
-.mission 
-{ 
-    top: 40%;
-    left: 40%;
-}
-
-.vision 
-{ 
-    top: 40%;
-    left: 70%;
 }
 
 .inner-line 
 {
-    width: 100%; 
-    border: 1px solid #000; /* Çizgi rengi ve kalınlığı */
-    margin-top: 100px;
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 50px;
 }
 
-.transparent-box h2 {
-    width: 100%;
-    top: -15%;
-    left: -40%;
-    padding: 40%;
-    margin: -140px 0 10px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+.goals-container h2 
+{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.goals-container p 
+{
+    margin: 10px ;
     text-align: center;
 }
 
-.transparent-box p {
-    margin: 100px 0;
-    width: 20%;
+.goals-container h3 
+{
+    text-align: center;
+    font-size: 30px;
+    color: #5d8245;
 }
-
