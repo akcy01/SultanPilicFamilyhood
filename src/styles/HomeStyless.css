@@ -98,7 +98,23 @@
 
 .horizontal-line1
 {
-    border: 1px solid red;
+    position: absolute;
+    bottom: -24%;
+    left: 0;
+    width: 30%;
+    height: 5px;
+    background-color: white;
+    
+}
+
+.horizontal-line2
+{
+    position: absolute;
+    bottom: -112%;
+    right: 0;
+    width: 30%;
+    height: 5px;
+    background-color: white;
 }
 
 .homepage-aboutUs img
@@ -116,6 +132,21 @@
     z-index: 1;
     font-size: 70px;
     color: #5d8245;
+}
+
+
+.homepage-aboutUs p 
+{
+    text-align: left;
+    position: absolute;
+    top: 175%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 70vh;
+    font-size: 30px;
+    color: #5d8245;
+    width: 40%;
 }
 
 .box1
@@ -155,4 +186,46 @@
 {
     width: 30%;
     height: auto;
+}
+
+/* HomePage Goals and Missions */
+
+
+.homepage-goalsAndMissions {
+    position: relative;
+    display: inline-block;
+}
+
+.transparent-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.history { /* İlk kutu */
+    top: 40%;
+    left: 10%;
+}
+
+.mission { /* İkinci kutu */
+    top: 40%;
+    left: 40%;
+}
+
+.vision { /* Üçüncü kutu */
+    top: 40%;
+    left: 70%;
+}
+
+.transparent-box p {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
 }
