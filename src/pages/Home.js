@@ -35,13 +35,19 @@ function Home() {
                 <img src="images/goalsAndMissions.png" />
 
                 <div class="transparent-box history">
-                    <p>İlk Kutu</p>
+                    <hr className="inner-line" />
+                    <h2>Tarihçe</h2>
+                    <p>Paragraf 1</p>
                 </div>
                 <div class="transparent-box mission">
-                    <p>İkinci Kutu</p>
+                    <hr class="inner-line" />
+                    <h2>Misyonumuz</h2>
+                    <p>Paragraf 1</p>
                 </div>
                 <div class="transparent-box vision">
-                    <p>Üçüncü Kutu</p>
+                    <hr className="inner-line" />
+                    <h2>Vizyonumuz</h2>
+                    <p>Paragraf 1</p>
                 </div>
             </div>
         </div>

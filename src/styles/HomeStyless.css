@@ -188,44 +188,67 @@
     height: auto;
 }
 
+
 /* HomePage Goals and Missions */
-
-
-.homepage-goalsAndMissions {
+.homepage-goalsAndMissions 
+{
     position: relative;
     display: inline-block;
 }
 
-.transparent-box {
+.transparent-box 
+{
     position: absolute;
     top: 0;
     left: 0;
     width: 20%;
     height: 50%;
     background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
 }
 
-.history { /* İlk kutu */
+.history 
+{ 
     top: 40%;
     left: 10%;
 }
 
-.mission { /* İkinci kutu */
+.mission 
+{ 
     top: 40%;
     left: 40%;
 }
 
-.vision { /* Üçüncü kutu */
+.vision 
+{ 
     top: 40%;
     left: 70%;
 }
 
-.transparent-box p {
-    color: #000;
-    font-size: 18px;
+.inner-line 
+{
+    width: 100%; 
+    border: 1px solid #000; /* Çizgi rengi ve kalınlığı */
+    margin-top: 100px;
+}
+
+.transparent-box h2 {
+    width: 100%;
+    top: -15%;
+    left: -40%;
+    padding: 40%;
+    margin: -140px 0 10px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
     text-align: center;
 }
+
+.transparent-box p {
+    margin: 100px 0;
+    width: 20%;
+}
+
