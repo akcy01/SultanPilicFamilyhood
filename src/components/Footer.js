@@ -1,4 +1,5 @@
 import { React } from "react"
+import "../styles/FooterStyless.css"
 
 function Footer() {
     return (
@@ -50,7 +51,26 @@ function Footer() {
                             <p>Konum</p>
                         </a>
                     </div>
+                    <div className="sb-footer-links-div">
+                        <h4>Sosyal Medya</h4>
+                        <div className="social-media">
+                            <p><img src="*" /></p>
+                            <p><img src="*" /></p>
+                            <p><img src="*" /></p>
+                        </div>
+                    </div>
                 </div>
+
+            <hr></hr>
+
+            <div className="sb-footer-below">
+                <div className="sb-footer-copyright">
+                    <p>
+                        @{new Date().getFullYear()} Design and developed by AkcayTech. All right reserved.
+                    </p>
+                </div>
+            </div>
+
             </div>
         </div>
     )
