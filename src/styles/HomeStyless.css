@@ -17,7 +17,7 @@
 {
     width: auto;
     display: block;
-}
+    margin-bottom: -3.9px;}
 
 .vertical-Line1
 {
@@ -123,6 +123,7 @@
 {
     width: 100%;
     height: 100vh;
+    margin-bottom: -3.9px;
 }
 
 .homepage-aboutUs h1
