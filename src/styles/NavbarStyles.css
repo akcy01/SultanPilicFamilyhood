@@ -1,48 +1,119 @@
-.logo 
-{
-    width: 100px; 
-    height: auto; 
-    margin-left: 7px; 
+.logo {
+  width: 100px;
+  height: auto;
+  margin-left: 7px;
 }
 
-nav
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #131315;
-    padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #131315;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.navbar
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar li
-{
-    list-style: none;
-    padding: 0 20px;
-    position: relative;
+.nav-menu li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
 }
 
-.navbar li a
-{
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #d1ab22;
-    transition: 0.3s ease-in-out;
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #d1ab22;
+  transition: 0.3s ease-in-out;
 }
 
-.navbar li a:hover
-{
-    color: #5d8245;
+.nav-menu li a:hover {
+  color: #5d8245;
 }
 
 .productMenu {
-    padding: 20px
+  padding: 20px;
+}
+
+.nav-toggler {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: #d1ab22;
+}
+
+@media screen and (max-width: 768px) {
+
+  .logo 
+  {
+    width: 70px;
+    height: auto;
+    margin-left: -15px;
   }
+
+  .nav-toggler 
+  {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu 
+  {
+    position: fixed;
+    top: 9vh;
+    right: 0;
+    width: 35%;
+    height: 93vh;
+    background: #131315;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+
+  .nav-menu li 
+  {
+    margin-top: 35px;
+    position: relative;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #d1ab22;
+    transition: 0.3s ease-in-out;
+  }
+  
+
+}
+
+.nav-active 
+{
+  transform: translateX(0%);
+}
+
+.toggle .toggler1 
+{
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.toggle .toggler2 
+{
+  opacity: 0;
+}
+
+.toggle .toggler3 
+{
+  transform: rotate(45deg) translate(-6px, -5px);
+}

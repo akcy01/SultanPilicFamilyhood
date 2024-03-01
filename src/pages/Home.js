@@ -27,8 +27,8 @@ function Home() {
                 </div>
                 <hr className="horizontal-line2" />
                 <h1>HAKKIMIZDA</h1>
-                <p>asdkfaowerf qowıejroqıwjr asodıfjqwoeırj asodfqowıejroqıwjt sodıfjqoweırj asdofıjqweoırjawe asoıdfjqwoeıjrzs aowejfsdf  hgkjgjkygukyfukfhgtftfyktfdkyutfkuhglıglıy
-                    oıjhoşıhoıhoşıhoıhoıh asdfasdfa asdfasdfasdfasd asdfasdfasdfasdas asdf asdfa sdf asdf asfasdf asdf  asdfasdfasdf</p>
+                <p>
+1997 yılında kurulan işletmemiz, müşterilerine en taze ve kaliteli çiğ tavuk ürünleri sunma amacıyla yola çıktı. Geçen yıllar içinde, gastronomi dünyasındaki değişimlere ayak uydurarak ürün yelpazemizi genişlettik. Başlangıçta sadece çiğ tavuk satışıyla tanınan dükkanımız, günümüzde artık pişirim hizmeti ve çeşitli meze seçenekleriyle müşterilerine zengin bir deneyim sunuyor.Taze ve sağlıklı ürünlerimizle damak zevkine önem veren müşterilerimize hizmet vermekten gurur duyuyoruz. Kalite, hijyen, ve lezzet konularında titizlikle çalışarak, müşterilerimize güvenilir ve keyifli bir alışveriş deneyimi sunuyoruz.</p>
             </div>
 
             <div className="homepage-goalsAndMissions">
