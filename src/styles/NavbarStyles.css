@@ -94,8 +94,49 @@
     color: #d1ab22;
     transition: 0.3s ease-in-out;
   }
-  
+}
 
+@media screen and (max-width: 450px){
+
+  .logo 
+  {
+    width: 70px;
+    height: auto;
+    margin-left: -15px;
+  }
+
+  .nav-toggler 
+  {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu 
+  {
+    position: fixed;
+    top: 11vh;
+    right: 75%;
+    width: 10%;
+    height: 80vh;
+    background: #131315;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+
+  .nav-menu li 
+  {
+    margin-top: 35px;
+    position: relative;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #d1ab22;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .nav-active 

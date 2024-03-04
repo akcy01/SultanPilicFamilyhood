@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DropdownMenu from "./DropdownMenu";
 import "../styles/NavbarStyles.css"
+import Home from "../pages/Home";
 
 function Navbar() {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [active, setActive] = useState("nav-menu");
     const [icon, setIcon] = useState("nav-toggler");
+    const [sendDataHomeComponent, setDataHomeComponent] = useState({});
+
+    const homeComponentControls = {
+        toggleButtonClicked : false,
+    }
 
     const navToggle = function () {
         if (active === "nav-menu")
@@ -17,6 +23,12 @@ function Navbar() {
             setIcon("nav-toggler toggle");
         else
             setIcon("nav-toggler");
+
+        if (window.visualViewport.width <= 450){
+            homeComponentControls.toggleButtonClicked = true;
+            setDataHomeComponent(homeComponentControls);
+        }
+
     };
 
     const openDropdown = function () {
@@ -29,7 +41,7 @@ function Navbar() {
     };
 
     return (
-        <div>
+        <div className="container">
             <nav className="nav">
                 <img src="images/sultanLogo.png" alt="mainLogo" className="logo" />
                 <ul className={active}>
@@ -48,6 +60,7 @@ function Navbar() {
                     <div className="toggler3"></div>
                 </div>
             </nav>
+            <Home data={sendDataHomeComponent} />
         </div>
     );
 }

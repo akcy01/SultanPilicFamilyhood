@@ -1,7 +1,11 @@
 import { React } from "react";
 import "../styles/HomeStyless.css"
 
-function Home() {
+function Home(props) { 
+
+    const { sendDataHomeComponent } = props;
+    console.log(sendDataHomeComponent);
+
     return (
         <div className="homepage">
             <div className="homepage-container">
