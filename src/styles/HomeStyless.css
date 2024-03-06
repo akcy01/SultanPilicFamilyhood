@@ -220,50 +220,47 @@
   
     .homepage-aboutUs h1 
     {
-      font-size: 38px;
+      font-size: 32px;
       line-height: 42px;
-      top: 110%;
+      top: 100%;
       left: 50%;
     }
 
     .horizontal-line1 {
         position: absolute;
-        bottom: -4%;
+        bottom: 2%;
         left: 20%;
         width: 60%;
-        height: 4px;
+        height: 3px;
         background-color: white;
       }
       
       .horizontal-line2 {
         position: absolute;
-        bottom: -84%;
-        left: 8%;
+        bottom: -65%;
+        left: 4%;
         width: 60%;
-        height: 4px;
+        height: 1px;
         background-color: white;
       }
       
       .homepage-aboutUs img {
-        height: 100vh;
+        height: 80vh;
         width: auto;
-        margin-left: -1rem;
-        flex-direction: column;
-        justify-content: left;
+        margin-left: -300px;
       }
   
     .homepage-aboutUs p {
         text-align: center;
         position: absolute;
-        top: 120%;
-        left: 45%;
+        top: 105%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
         height: 0vh;
-        font-size: 20px;
+        font-size: 18px;
         color: #5d8245;
-        padding-right: 90px;  
-
+        width: 70%;
       }
       
       .box1 {
