@@ -24,11 +24,18 @@ function Navbar() {
         else
             setIcon("nav-toggler");
 
-        if (window.visualViewport.width <= 450){
-            homeComponentControls.toggleButtonClicked = true;
-            setDataHomeComponent(homeComponentControls);
-        }
 
+        if(window.visualViewport.width <= 450){
+            
+            if(icon === "nav-toggler"){
+                homeComponentControls.toggleButtonClicked = true;
+                setDataHomeComponent(homeComponentControls);
+            }
+            else if(icon === "nav-toggler toggle"){
+                homeComponentControls.toggleButtonClicked = false;
+                setDataHomeComponent(homeComponentControls);
+            }
+        }
     };
 
     const openDropdown = function () {
