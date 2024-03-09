@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: inline-block;
   justify-content: center;
   align-items: left;
@@ -99,8 +99,7 @@
 
   .homepage-container img {
     height: 80vh;
-    width: auto;
-    margin-left: -300px;
+    width: 100%;
   }
 
   .vertical-Line1 {
@@ -217,79 +216,106 @@
 }
 
 @media screen and (max-width: 450px) {
-  
-    .homepage-aboutUs h1 
-    {
-      font-size: 32px;
-      line-height: 42px;
-      top: 100%;
-      left: 50%;
-    }
-
-    .horizontal-line1 {
-        position: absolute;
-        bottom: 2%;
-        left: 20%;
-        width: 60%;
-        height: 3px;
-        background-color: white;
-      }
-      
-      .horizontal-line2 {
-        position: absolute;
-        bottom: -65%;
-        left: 4%;
-        width: 60%;
-        height: 1px;
-        background-color: white;
-      }
-      
-      .homepage-aboutUs img {
-        height: 80vh;
-        width: auto;
-        margin-left: -300px;
-      }
-  
-    .homepage-aboutUs p {
-        text-align: center;
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        height: 0vh;
-        font-size: 18px;
-        color: #5d8245;
-        width: 70%;
-      }
-      
-      .box1 {
-        display: none;
-      }
-      
-      .box1 img {
-        width: 30%;
-        height: auto;
-      }
-      
-      .box2 {
-        display: none;
-      }
-      
-      .box2 img {
-        width: 30%;
-        height: auto;
-      }
-      
-      .box3 {
-        display: none;
-      }
-      
-      .box3 img {
-        width: 30%;
-        height: auto;
-      }
+  .homepage-aboutUs {
+    height: 100vh;
+    width: 100%;
   }
+
+
+ 
+  .homepage-aboutUs img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .horizontal-line1 {
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+  }
+
+  .horizontal-line2 {
+    position: absolute;
+    bottom: -85%;
+    right: 0%;
+    width: 60%;
+    height: 1px;
+    background-color: white;
+  }
+
+  .aboutUs-mobile-container {
+    position: absolute;
+    display: block;
+    top: 104%;
+    left: 39px;
+    width: 70%;
+    height: 65%;
+    background: rgba(69, 73, 75, 0.8); /* Kutunun arka plan rengi ve opaklığı */
+    padding: 20px; /* İçerik etrafındaki iç boşluk */
+    box-sizing: border-box; /* Padding'i genişlik ve yüksekliğe dahil et */
+    z-index: 2; /* Kutuyu diğer içeriklerin üzerine yerleştir */
+  }
+
+
+  .aboutUs-mobile-container h1 {
+    font-size: 32px;
+    top: 4%;
+    left: 154px;
+    color: #131315;
+  }
+  
+  .aboutUs-mobile-container p {
+    text-align: center;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 0vh;
+    font-size: 17px;
+    color: #131315;
+    width: 80%;
+  }
+
+  .aboutUs-mobile-container button{
+    margin-top: 610px;
+    width: 65%;
+    height: 6vh;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #45494b, #101010); /* Renkleri ve geçiş yönünü ayarlayabilirsiniz */
+    color: #fff; /* Yazı rengini beyaz yapmak önemli */
+  }
+
+  .box1 {
+    display: none;
+  }
+
+  .box1 img {
+    width: 30%;
+    height: auto;
+  }
+
+  .box2 {
+    display: none;
+  }
+
+  .box2 img {
+    width: 30%;
+    height: auto;
+  }
+
+  .box3 {
+    display: none;
+  }
+
+  .box3 img {
+    width: 30%;
+    height: auto;
+  }
+}
 
 /* HomePage Goals and Missions */
 .homepage-goalsAndMissions {
@@ -340,4 +366,53 @@
   text-align: center;
   font-size: 30px;
   color: #5d8245;
+}
+
+@media screen and (max-width: 450px) {
+  .homepage-goalsAndMissions {
+    position: relative;
+    display: inline-block;
+  }
+
+  .homepage-goalsAndMissions img {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .goals-container {
+    display: none;
+  }
+
+  .goals-container h1 {
+    font-size: 20px;
+    color: #5d8245;
+    justify-content: center;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .inner-line {
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 50px;
+  }
+
+  .goals-container h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .goals-container p {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .goals-container h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #5d8245;
+  }
 }
