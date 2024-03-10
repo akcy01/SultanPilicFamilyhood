@@ -32,7 +32,10 @@ function Home(props) {
                 <div className="homepage">
                     <div className="homepage-container">
                         <img src={defaultImageRoads.homepageIntroductionBackground} />
-                        <div className="vertical-Line1"></div>
+                        <div className="vertical-Line-container">
+                            <div className="vertical-Line1"></div>
+                        </div>
+
                         <h1>SULTAN PİLİÇ</h1>
                         <h3>1997'den beri..</h3>
                         <p>Kuruluş yılımız olan 1997'den bu yana damak tadınıza uygun, en taze ürünlerimizi sizlere sunmaktayız.</p>
@@ -57,12 +60,18 @@ function Home(props) {
 
                         {mobileControls.isMobile ? (
                             <div className="aboutUs-mobile-container">
-                                <h1>HAKKIMIZDA</h1>
-                                <p>
-                                    1997 yılında kurulan işletmemiz, müşterilerine en taze ve kaliteli çiğ tavuk ürünleri sunma amacıyla yola çıktı. Geçen yıllar içinde, gastronomi dünyasındaki değişimlere ayak uydurarak ürün yelpazemizi genişlettik. Başlangıçta sadece çiğ tavuk satışıyla tanınan dükkanımız, günümüzde artık pişirim hizmeti ve çeşitli meze seçenekleriyle müşterilerine zengin bir deneyim sunuyor.Taze ve sağlıklı ürünlerimizle damak zevkine önem veren müşterilerimize hizmet vermekten gurur duyuyoruz. Kalite, hijyen, ve lezzet konularında titizlikle çalışarak, müşterilerimize güvenilir ve keyifli bir alışveriş deneyimi sunuyoruz.</p>
-                                <button>Devamını Gör</button>
+                                <div className="aboutUs-mobile-contains">
+                                    <h1>HAKKIMIZDA</h1>
+                                    <p>
+                                        1997 yılında kurulan işletmemiz, müşterilerine en taze ve kaliteli çiğ tavuk ürünleri sunma amacıyla yola çıktı. Geçen yıllar içinde, gastronomi dünyasındaki değişimlere ayak uydurarak ürün yelpazemizi genişlettik. Başlangıçta sadece çiğ tavuk satışıyla tanınan dükkanımız, günümüzde artık pişirim hizmeti ve çeşitli meze seçenekleriyle müşterilerine zengin bir deneyim sunuyor.
+                                    </p>
+                                </div>
+                                <button>
+                                    <div>
+                                        Devamını Gör
+                                    </div>
+                                </button>
                             </div>
-
                         ) : (
                             <div className="aboutUs-desktop-container">
                                 <h1>HAKKIMIZDA</h1>
