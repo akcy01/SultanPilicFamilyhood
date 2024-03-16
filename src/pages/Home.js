@@ -83,7 +83,6 @@ function Home(props) {
 
                     <div className="homepage-goalsAndMissions">
                         <img src={defaultImageRoads.goalsAndMissionsBackground} />
-                        <div className="goals-container">
                             {mobileControls.isMobile ? (
                                 <div className="goals-container-mobile">
                                     <h1>VİZYON & MİSYON</h1>
@@ -135,10 +134,7 @@ function Home(props) {
                                     </div>
                                 </>
                             )}
-
                         </div>
-                    </div>
-
                     <Footer />
                 </div>
             )

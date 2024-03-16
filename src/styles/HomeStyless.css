@@ -390,7 +390,14 @@
 @media screen and (max-width: 450px) {
   .homepage-goalsAndMissions {
     position: relative;
-    display: inline-block;
+    display: flex;
+  }
+
+  .goals-container-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
   }
 
   .homepage-goalsAndMissions img {
@@ -398,18 +405,11 @@
     width: 100%;
   }
 
-  .goals-container-mobile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    justify-content: space-between;
-  }
-
   .goals-container-mobile h1 {
     font-size: 39px;
     margin-top: 15%;
     color: #fff;
+    text-align: center;
   }
 
   .goals-container-mobile h3 {
@@ -420,7 +420,7 @@
 
   .goals-container-mobile button {
     position: absolute;
-    bottom: -220%;
+    top: 100%;
     left: 50%;
     width: 50%;
     transform: translateX(-50%);
@@ -434,7 +434,7 @@
     font-size: 20px;
   }
 
-  .mission-vision-container {
+  .goals-container-mobile mission-vision-container {
     position: absolute;
     top: 190%;
     height: 50vh;
