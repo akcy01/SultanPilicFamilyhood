@@ -83,6 +83,7 @@ function Home(props) {
 
                     <div className="homepage-goalsAndMissions">
                         <img src={defaultImageRoads.goalsAndMissionsBackground} />
+                        <div className="goals-container">
                             {mobileControls.isMobile ? (
                                 <div className="goals-container-mobile">
                                     <h1>VİZYON & MİSYON</h1>
@@ -114,7 +115,7 @@ function Home(props) {
                                     </button>
                                 </div>
                             ) : (
-                                <>
+                                <div className="goals-container-mobile">
                                     <h1>VİZYON & MİSYON</h1>
                                     <h3>asdfqweuırhqıwu qwıuerqwıue qwıueh qwerıu asdfqwe qw qwe qwer qwerqwteasdfas asdfasdfasdfasdf</h3>
                                     <div class="box">
@@ -132,9 +133,12 @@ function Home(props) {
                                         <hr class="inner-line" />
                                         <p>u bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.Bu bölüm kelimeleri doğru şekilde kullanmanıza yardımcı olacaktır. Bir kelimenin bağlam içinde nasıl kullanılacağını anlamak genellikle çeviriden daha kolaydır. Her sayfa birkaç örnek cümle ile gösterilmiştir ve istediğiniz zaman bir çeviri sayfasına geri dönebilirsiniz. Ayrıca, doğrudan bölümün dahili arama motorunu kullanarak da kelime arayabilirsiniz. 18 dilde örnekler bulacaksınız.</p>
                                     </div>
-                                </>
+                                </div>
                             )}
+
                         </div>
+                    </div>
+
                     <Footer />
                 </div>
             )
