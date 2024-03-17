@@ -54,22 +54,22 @@ function Footer() {
                     <div className="sb-footer-links-div">
                         <h4>Sosyal Medya</h4>
                         <div className="social-media">
-                            <p><img src="*" /></p>
-                            <p><img src="*" /></p>
-                            <p><img src="*" /></p>
+                            <a><p><img src="images/whatsappLogo.png" /></p></a>
+                            <a><p><img src="images/instagramLogo.png" /></p></a>
+                            <a><p><img src="images/phoneLogo.png" /></p></a>
                         </div>
                     </div>
                 </div>
 
-            <hr></hr>
+                <hr></hr>
 
-            <div className="sb-footer-below">
-                <div className="sb-footer-copyright">
-                    <p>
-                        @{new Date().getFullYear()} Design and developed by AkcayTech. All right reserved.
-                    </p>
+                <div className="sb-footer-below">
+                    <div className="sb-footer-copyright">
+                        <p>
+                            @{new Date().getFullYear()} Design and developed by AkcayTech. All right reserved.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
             </div>
         </div>
