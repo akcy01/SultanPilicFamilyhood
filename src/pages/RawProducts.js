@@ -6,4 +6,4 @@ function RawProducts() {
   )
 }
 
-export default RawProducts
+export default RawProducts;

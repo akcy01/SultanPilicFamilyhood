@@ -1,20 +1,31 @@
 import { React } from "react";
 import "../styles/HomeStyless.css"
-import Footer from '../components/Footer';
 
 function Home(props) {
 
+    const mobileControls = {
+        isMobile: false,
+    };
+
+    const controls = {
+        showHomePage: false
+    };
+
     const receivedDataAtNavbar = props;
 
-    const mobileControls = {
-        isMobile: false
-    };
 
     const defaultImageRoads = {
         homepageIntroductionBackground: "images/homePageIntroduction.png",
         aboutUsBackground: "images/aboutUsBackground.png",
         goalsAndMissionsBackground: "images/goalsAndMissions.png"
     };
+
+    if (receivedDataAtNavbar.data !== null) {
+        if (!receivedDataAtNavbar.data.toggleButtonClicked)
+            controls.showHomePage = true;
+    }
+    else
+        controls.showHomePage = true;
 
     if (window.visualViewport.width <= 450) {
         mobileControls.isMobile = true;
@@ -28,7 +39,7 @@ function Home(props) {
 
     return (
         <div>
-            {receivedDataAtNavbar.data.toggleButtonClicked !== true && (
+            {controls.showHomePage && (
                 <div className="homepage">
                     <div className="homepage-container">
                         <img src={defaultImageRoads.homepageIntroductionBackground} />

@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import "../styles/NavbarStyles.css"
-import Home from "../pages/Home";
 
-function Navbar() {
+function Navbar({ sendDataToHome }) {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [active, setActive] = useState("nav-menu");
     const [icon, setIcon] = useState("nav-toggler");
-    const [sendDataHomeComponent, setDataHomeComponent] = useState({});
+
+    const handleClick = function (data) {
+        sendDataToHome(data);
+    };
 
     const homeComponentControls = {
-        toggleButtonClicked : false,
+        toggleButtonClicked: false,
     }
 
     const navToggle = function () {
@@ -25,15 +28,15 @@ function Navbar() {
             setIcon("nav-toggler");
 
 
-        if(window.visualViewport.width <= 450){
-            
-            if(icon === "nav-toggler"){
+        if (window.visualViewport.width <= 450) {
+
+            if (icon === "nav-toggler") {
                 homeComponentControls.toggleButtonClicked = true;
-                setDataHomeComponent(homeComponentControls);
+                handleClick(homeComponentControls)
             }
-            else if(icon === "nav-toggler toggle"){
+            else if (icon === "nav-toggler toggle") {
                 homeComponentControls.toggleButtonClicked = false;
-                setDataHomeComponent(homeComponentControls);
+                handleClick(homeComponentControls)
             }
         }
     };
@@ -52,9 +55,9 @@ function Navbar() {
             <nav className="nav">
                 <img src="images/sultanLogo.png" alt="mainLogo" className="logo" />
                 <ul className={active}>
-                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><Link to="/"> Ana Sayfa </Link></li>
                     <div className="productMenu" onMouseEnter={openDropdown} onMouseLeave={closeDropwdown}>
-                        <li ><a href="./pages/Products.js" className="products" >Ürünlerimiz</a>
+                        <li ><Link to="/products" className="products"> Ürünlerimiz </Link>
                             {isDropdownOpen && <DropdownMenu />}
                         </li>
                     </div>
@@ -67,7 +70,6 @@ function Navbar() {
                     <div className="toggler3"></div>
                 </div>
             </nav>
-            <Home data={sendDataHomeComponent} />
         </div>
     );
 }
