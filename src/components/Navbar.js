@@ -54,7 +54,7 @@ function Navbar() {
                 <ul className={active}>
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <div className="productMenu" onMouseEnter={openDropdown} onMouseLeave={closeDropwdown}>
-                        <li ><a href="cde.html" className="products" >Ürünlerimiz</a>
+                        <li ><a href="./pages/Products.js" className="products" >Ürünlerimiz</a>
                             {isDropdownOpen && <DropdownMenu />}
                         </li>
                     </div>

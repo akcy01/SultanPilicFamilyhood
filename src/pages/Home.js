@@ -138,8 +138,6 @@ function Home(props) {
 
                         </div>
                     </div>
-
-                    <Footer />
                 </div>
             )
             }

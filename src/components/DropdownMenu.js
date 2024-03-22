@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/DropdownMenuStyles.css"
+import { Link } from "react-router-dom";
 
 const DropdownMenu = () => {
     return (
         <div className="dropdown-menu">
             <ul className="aboutUsDropdownContent">
-                <li><a href="urun1.html">Çiğ Ürünler</a></li>
-                <li><a href="urun2.html">Pişmiş Ürünler</a></li>
+                <li><Link to="/rawProducts"> Çiğ Ürünler </Link></li>
+                <li><Link to="/bakedProducts"> Pişmiş Ürünler </Link></li>
             </ul>
         </div>
     );
