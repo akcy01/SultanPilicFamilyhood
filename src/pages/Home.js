@@ -3,6 +3,8 @@ import "../styles/HomeStyless.css"
 
 function Home(props) {
 
+    const receivedDataAtNavbar = props;
+
     const mobileControls = {
         isMobile: false,
     };
@@ -10,9 +12,6 @@ function Home(props) {
     const controls = {
         showHomePage: false
     };
-
-    const receivedDataAtNavbar = props;
-
 
     const defaultImageRoads = {
         homepageIntroductionBackground: "images/homePageIntroduction.png",

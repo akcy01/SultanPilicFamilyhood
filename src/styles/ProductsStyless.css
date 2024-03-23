@@ -1,0 +1,119 @@
+.products-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #131315;
+}
+
+.arrow-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.arrow-container li{
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    background: red;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.arrow-container li:hover{
+    background: blue;
+}
+
+.arrow-container li span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff;
+    transition: .5s;
+}
+
+.arrow-container li.next span {
+    top: 40%;
+    right: 10%;
+    transform: translate(-50%) rotate(-45deg);
+    border-left: none;
+    border-top: none
+}
+
+.arrow-container li.next:hover span {
+    right: 12%;
+}
+
+.arrow-container li.next span:before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background: #fff;
+    transform-origin: right;
+    transform: rotate(45deg) translate(0px,25px) scale(0);
+    transition: .5s;
+}
+
+.arrow-container li.next:hover span:before {
+    transform: rotate(45deg) translate(0px,25px) scale(1);
+}
+
+.arrow-container li.prev span {
+    top: 41%;
+    left: 19%;
+    transform: translate(-50%) rotate(-45deg);
+    border-right: none;
+    border-bottom: none
+}
+
+.arrow-container li.prev:hover span {
+    left: 19%;
+}
+
+.arrow-container li.prev span:before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background: #fff;
+    transform-origin: left;
+    transform: rotate(45deg) translate(-2px,-1px) scaleX(0);
+    transition: .5s;
+}
+
+.arrow-container li.prev:hover span:before {
+    transform: rotate(45deg) translate(-2px,-1px) scaleX(1);
+}
+
+
+.baked-products{
+    width: 100%;
+    height: 70vh;
+}
+  
+.products-line1 {
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 0;
+    width: 40%; 
+    height: 5px; 
+    background-color: white;
+
+}
+
+.products-line2 {
+    position: absolute;
+    display: block;
+    top: 100%;
+    right: 0;
+    width: 40%; 
+    height: 5px; 
+    background-color: white;
+  }
+  

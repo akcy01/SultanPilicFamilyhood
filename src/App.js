@@ -7,6 +7,7 @@ import ContactUs from './pages/ContactUs'
 import BakedProducts from './pages/BakedProducts';
 import RawProducts from './pages/RawProducts';
 import Home from './pages/Home';
+import AppetizerProducts from './pages/AppetizerProducts';
 import { Route, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/bakedProducts" element={<BakedProducts />} />
         <Route path="/rawProducts" element={<RawProducts />} />
+        <Route path="/appetizerProducts" element={<AppetizerProducts />} />
       </Routes>
       <Footer />
     </div>
