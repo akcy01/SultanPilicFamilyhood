@@ -11,29 +11,46 @@ function Products() {
 
 
   return (
-    <>
-      <div className='products-container'>
-          <ul className="arrow-container">
-            <li className="prev"><span></span></li>
-            <li className="next"><span></span></li>
-          </ul>
-
-        <div className="baked-products">
-          <div className="products-line1"></div>
-          <div className="baked-box1">
-            <img src="*" alt="baked-box-image1" />
+    <div className='container'>
+      <div className='slide-container'>
+        <div className='slide'>
+          <div className='content'>
+            <h3>Pişmiş Ürünler</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+            <a href='*' className='btn'> Devamını Gör </a>
           </div>
-          <div className="baked-box2">
-            <img src="*" alt="baked-box-image2" />
+          <div className='image'>
+            <img src='images/bakedBoxImage1.jpg' />
           </div>
-          <div className="baked-box3">
-            <img src="*" alt="baked-box-image3" />
-          </div>
-          <div className="products-line2"></div>
         </div>
-
       </div>
-    </>
+
+      <div className='slide-container'>
+        <div className='slide'>
+          <div className='content'>
+            <h3>Çiğ Ürünler</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+            <a href='*' className='btn'> Devamını Gör </a>
+          </div>
+          <div className='image'>
+            <img src='images/bakedBoxImage2.jpg' />
+          </div>
+        </div>
+      </div>
+
+      <div className='slide-container'>
+        <div className='slide'>
+          <div className='content'>
+            <h3>Mezeler</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+            <a href='*' className='btn'> Devamını Gör </a>
+          </div>
+          <div className='image'>
+            <img src='images/bakedBoxImage3.jpg' />
+          </div>
+        </div>
+      </div>
+    </div>
 
   )
 }
