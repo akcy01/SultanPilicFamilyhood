@@ -21,9 +21,10 @@ function App() {
     setSendDataHomeComponent(data);
   };
 
+
   return (
     <div className="App">
-      <Navbar sendDataToHome={handleSendDataToHome} />
+      <Navbar sendDataToHome={handleSendDataToHome}/>
       <Routes>
         <Route path="/" element={<Home data={sendDataHomeComponent} />} />
         <Route path="/products" element={<Products />} />
@@ -32,8 +33,8 @@ function App() {
         <Route path="/bakedProducts" element={<BakedProducts />} />
         <Route path="/rawProducts" element={<RawProducts />} />
         <Route path="/appetizerProducts" element={<AppetizerProducts />} />
-      </Routes>
-      <Footer />
+      </Routes >
+      <Footer data={sendDataHomeComponent}/>
     </div>
   );
 }

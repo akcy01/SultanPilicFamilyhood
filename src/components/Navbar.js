@@ -3,17 +3,21 @@ import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import "../styles/NavbarStyles.css"
 
-function Navbar({ sendDataToHome }) {
+function Navbar(props, sendDataToHome) {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [active, setActive] = useState("nav-menu");
     const [icon, setIcon] = useState("nav-toggler");
 
     const handleClick = function (data) {
-        sendDataToHome(data);
+        props.sendDataToHome(data);
     };
 
     const homeComponentControls = {
         toggleButtonClicked: false,
+    }
+
+    const controls = {
+        mobileClick: false,
     }
 
     const navToggle = function () {
@@ -50,14 +54,19 @@ function Navbar({ sendDataToHome }) {
         setDropdownOpen(false)
     };
 
+    const setToggle = function() {
+        setActive("nav-menu");
+        controls.mobileClick = true;
+    }
+
     return (
         <div className="container">
             <nav className="nav">
                 <img src="images/sultanLogo.png" alt="mainLogo" className="logo" />
                 <ul className={active}>
-                    <li><Link to="/"> Ana Sayfa </Link></li>
+                    <li onClick={setToggle}><Link to="/"> Ana Sayfa </Link></li>
                     <div className="productMenu" onMouseEnter={openDropdown} onMouseLeave={closeDropwdown}>
-                        <li ><Link to="/products" className="products"> Ürünlerimiz </Link>
+                        <li><Link to="/products" className="products"> Ürünlerimiz </Link>
                             {isDropdownOpen && <DropdownMenu />}
                         </li>
                     </div>
