@@ -14,11 +14,8 @@ function Navbar(props, sendDataToHome) {
 
     const homeComponentControls = {
         toggleButtonClicked: false,
-    }
-
-    const controls = {
-        mobileClick: false,
-    }
+        mobileClick: false
+    };
 
     const navToggle = function () {
         if (active === "nav-menu")
@@ -54,19 +51,14 @@ function Navbar(props, sendDataToHome) {
         setDropdownOpen(false)
     };
 
-    const setToggle = function() {
-        setActive("nav-menu");
-        controls.mobileClick = true;
-    }
-
     return (
         <div className="container">
             <nav className="nav">
                 <img src="images/sultanLogo.png" alt="mainLogo" className="logo" />
                 <ul className={active}>
-                    <li onClick={setToggle}><Link to="/"> Ana Sayfa </Link></li>
+                    <li onClick={navToggle}><Link to="/"> Ana Sayfa </Link></li>
                     <div className="productMenu" onMouseEnter={openDropdown} onMouseLeave={closeDropwdown}>
-                        <li><Link to="/products" className="products"> Ürünlerimiz </Link>
+                        <li onClick={navToggle}><Link to="/products" className="products"> Ürünlerimiz </Link>
                             {isDropdownOpen && <DropdownMenu />}
                         </li>
                     </div>

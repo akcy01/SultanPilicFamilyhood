@@ -27,7 +27,7 @@ function App() {
       <Navbar sendDataToHome={handleSendDataToHome}/>
       <Routes>
         <Route path="/" element={<Home data={sendDataHomeComponent} />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products" element={<Products data={sendDataHomeComponent}/>} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/bakedProducts" element={<BakedProducts />} />

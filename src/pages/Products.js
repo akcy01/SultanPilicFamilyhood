@@ -10,23 +10,23 @@ function Products(props) {
   };
 
   const controls = {
-    showHomePage: false
+    showProducts: true,
   };
 
 
-  if (receivedDataAtNavbar.data) {
-    if (!receivedDataAtNavbar.data.toggleButtonClicked)
-      controls.showHomePage = true;
-  }
-  else
-    controls.showHomePage = false;
+  // if (receivedDataAtNavbar.data) {
+  //   if (!receivedDataAtNavbar.data.toggleButtonClicked)
+  //     controls.showProducts = true;
+  // }
+  // else
+  //   controls.showProducts = false;
 
 
-  if (window.visualViewport.width <= 450) {
-    mobileControls.isMobile = true;
-  }
-  else
-    mobileControls.isMobile = false;
+  // if (window.visualViewport.width <= 450) {
+  //   mobileControls.isMobile = true;
+  // }
+  // else
+  //   mobileControls.isMobile = false;
 
 
   const [step1Class, setstep1Class] = useState('slide-container active');
@@ -89,7 +89,7 @@ function Products(props) {
 
   return (
     <div>
-      {controls.showHomePage && (
+      {controls.showProducts && (
         <div className='container'>
           <div className={step1Class}>
             <div className='slide'>
