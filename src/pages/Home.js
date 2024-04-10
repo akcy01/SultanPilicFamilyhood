@@ -84,6 +84,52 @@ function Home(props) {
                         </div>
                     </section>
 
+                    <section className="mission" id="mission">
+                        <div className="middle-text">
+                            <h4>Misyonumuz</h4>
+                            <h2>Lets check our mission and vision</h2>
+                        </div>
+
+                        <div className="mission-content">
+                            <div className="row">
+                                <img src="images/boxImage1.jpg" />
+                                <h3>Misyonumuz</h3>
+                                <p>asdfqaet qwdfqwefkj qkwjnefqkwjfoı jasdjfoqwepo  mksadlf</p>
+                                <div className="in-text">
+                                    <div className="s-btnn">
+                                        <a href="#"> Devamını Gör </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row">
+                                <img src="images/boxImage2.jpg" />
+                                <h3>Vizyonumuz</h3>
+                                <p>asdfqaet qwdfqwefkj qkwjnefqkwjfoı jasdjfoqwepo  mksadlf</p>
+                                <div className="in-text">
+                                    <div className="s-btnn">
+                                        <a href="#"> Devamını Gör </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row">
+                                <img src="images/bakedBoxImage4.jpg" />
+                                <h3>Hedeflerimiz</h3>
+                                <p>asdfqaet qwdfqwefkj qkwjnefqkwjfoı jasdjfoqwepo  mksadlf</p>
+                                <div className="in-text">
+                                    <div className="s-btnn">
+                                        <a href="#"> Devamını Gör </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row-btn">
+                            <a href="#" className="btn"> Devamını Gör </a>
+                        </div>
+                    </section>
+
                 </>
 
 
