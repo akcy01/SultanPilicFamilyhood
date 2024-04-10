@@ -26,7 +26,7 @@ section {
 }
 
 .home-img img {
-  width: 130%;
+  width: 100%;
   height: auto;
 }
 
@@ -91,8 +91,9 @@ section {
 }
 
 .about-img img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  border-radius: 30px;
 }
 
 .about-text h2 {
@@ -194,4 +195,14 @@ section {
 
 .row img:hover{
   transform: scale(1.1);
+}
+
+@media (max-width: 1545px){
+  section{
+    padding: 50px 4% 40px;
+    transition: .2s;
+  }
+  .container-cont{
+    padding: 30px 4% 50px;
+  }
 }

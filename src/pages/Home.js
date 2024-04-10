@@ -129,11 +129,7 @@ function Home(props) {
                             <a href="#" className="btn"> Devamını Gör </a>
                         </div>
                     </section>
-
                 </>
-
-
-
             )}
         </div>
     )
