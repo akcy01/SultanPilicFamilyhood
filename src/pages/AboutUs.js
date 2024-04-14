@@ -2,10 +2,32 @@ import React from 'react'
 import "../styles/AboutUsStyless.css"
 
 
-function AboutUs() {
+function AboutUs(props) {
+
+  const receivedDataAtNavbar = props;
+
+  const mobileControls = {
+    isMobile: false,
+  };
+
+  const controls = {
+    showProducts: true,
+  };
+
+
+  if (receivedDataAtNavbar.data) {
+    if (!receivedDataAtNavbar.data.toggleButtonClicked)
+      controls.showProducts = true;
+    else
+      controls.showProducts = false;
+  }
+
+
   return (
-    <>
-      <section id='about-home' >
+    <div>
+    {controls.showProducts && (
+      <div>
+      <section id='about-home'>
         <h2>HAKKIMIZDA</h2>
       </section>
 
@@ -35,7 +57,10 @@ function AboutUs() {
             <img src='images/inisDibi.png' alt='inisDibi'/>
         </div>
       </section>
-    </>
+      </div>
+       )
+      }
+    </div>
   )
 }
 

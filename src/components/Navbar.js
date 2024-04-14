@@ -62,7 +62,7 @@ function Navbar(props, sendDataToHome) {
                             {isDropdownOpen && <DropdownMenu />}
                         </li>
                     </div>
-                    <li><Link to="/aboutUs" className="aboutUs"> Hakkımızda </Link></li>
+                    <li onClick={navToggle}><Link to="/aboutUs" className="aboutUs"> Hakkımızda </Link></li>
                     <li><a href="*" >İletişim</a></li>
                 </ul>
                 <div onClick={navToggle} className={icon} >
