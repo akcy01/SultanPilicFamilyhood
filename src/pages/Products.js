@@ -96,7 +96,7 @@ function Products(props) {
             <div className='slide'>
               <div className='content'>
                 <h3>Pişmiş Ürünler</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+                <p>Uzman ellerde pişirilmiş, ızgara, şiş, kuşbaşı, göğüs, incik, kelebek gibi çeşitlerle zenginleştirdiğimiz taze ve lezzetli ürünlerimizle sofralarınıza keyif katıyoruz.</p>
                 <a href='*' className='btn'> Devamını Gör </a>
               </div>
               <div className='image'>
@@ -109,7 +109,7 @@ function Products(props) {
             <div className='slide'>
               <div className='content'>
                 <h3>Çiğ Ürünler</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+                <p>Sağlık ve lezzet arayanların tercihi olan çiğ ürünlerimiz, en taze ve kaliteli malzemelerle hazırlanmıştır. Geniş ürün yelpazemizde bulunan çeşitlerle, her damak zevkine uygun seçenekler sunuyoruz. </p>
                 <a href='*' className='btn'> Devamını Gör </a>
               </div>
               <div className='image'>
@@ -122,7 +122,7 @@ function Products(props) {
             <div className='slide'>
               <div className='content'>
                 <h3>Mezeler</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+                <p>Renkli ve lezzetli mezelerimiz, damak zevkinize uygun birbirinden özel seçenekler sunuyor. Taze ve doğal malzemelerle hazırlanan mezelerimiz, yemeklerinize eşlik ederken sofralarınıza ferahlık ve lezzet katıyor.</p>
                 <a href='*' className='btn'> Devamını Gör </a>
               </div>
               <div className='image'>

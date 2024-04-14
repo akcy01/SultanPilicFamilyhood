@@ -59,15 +59,17 @@
   font-size: 16px;
   color: #5d8245;
   padding: 10px 0;
+  font-weight: 500;
 }
 
 .container .slide-container .slide .content .btn {
   margin-top: 10px;
   display: inline-block;
-  background: #666;
-  color: #fff;
+  background: #131315;
+  color: #5d8245;
   font-size: 17px;
   padding: 9px 40px;
+  border-radius: 3px;
 }
 
 .container .slide-container .slide .content .btn:hover {
