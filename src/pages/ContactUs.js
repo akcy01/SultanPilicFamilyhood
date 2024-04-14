@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/ContactUsStyless.css"
+import 'font-awesome/css/font-awesome.min.css';
 
 function ContactUs() {
   return (
@@ -15,18 +16,19 @@ function ContactUs() {
           <div className='getin-details'>
             <h3>Merkezimiz</h3>
             <div>
-              <i className='far fa-home get'></i>
-              <p>burası adresimiz yazacak urada</p>
+              <i className='fa fa-home get'></i>
+              <p>Arsuz Yolu Üzeri,Kaymakamlık Işıklarını Geçtikten Sonra, Cumhuriyet Caddesi - Arsuz / Hatay</p>
             </div>
             <h3>Telefon</h3>
             <div>
-              <i className='fas fa-phone-alt get'></i>
-              <p>burası adresimiz yazacak urada</p>
+            <i class="fa fa-sharp fa-solid fa-phone get"></i>
+              <p>+90 (501) 242 30 30</p>,,,,,,, 
+              <p>+90 (507) 402 32 32</p>
             </div>
             <h3>Mail</h3>
             <div>
-              <i className='fal fa-envelope-open-tet get'> </i>
-              <p>burası adresimiz yazacak urada</p>
+            <i class="fa fa-solid fa-envelope get"></i>
+              <p>sultanpilic@gmail.com</p>
             </div>
           </div>
         </div>
