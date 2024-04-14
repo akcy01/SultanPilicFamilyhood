@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import "../styles/NavbarStyles.css"
@@ -63,7 +63,7 @@ function Navbar(props, sendDataToHome) {
                         </li>
                     </div>
                     <li onClick={navToggle}><Link to="/aboutUs" className="aboutUs"> Hakkımızda </Link></li>
-                    <li><a href="*" >İletişim</a></li>
+                    <li><Link to="/contactUs" className="aboutUs"> İletişim </Link></li>
                 </ul>
                 <div onClick={navToggle} className={icon} >
                     <div className="toggler1"></div>
