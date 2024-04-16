@@ -98,7 +98,8 @@ function Products(props) {
               <div className='content'>
                 <h3>Pişmiş Ürünler</h3>
                 <p>Uzman ellerde pişirilmiş, ızgara, şiş, kuşbaşı, göğüs, incik, kelebek gibi çeşitlerle zenginleştirdiğimiz taze ve lezzetli ürünlerimizle sofralarınıza keyif katıyoruz.</p>
-                <a className='btn'><Link to="/bakedProducts"> Devamını Gör </Link></a>
+                {/* <a className='btn'><Link className='btn' to="/bakedProducts"> Devamını Gör </Link></a> */}
+                <Link className='btn' to="/bakedProducts"> Devamını Gör </Link>
               </div>
               <div className='image'>
                 <img src='images/bakedBoxImage2.jpg' alt='' />
