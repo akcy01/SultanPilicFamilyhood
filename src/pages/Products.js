@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { Link } from "react-router-dom";
 import "../styles/ProductsStyless.css"
 
 function Products(props) {
@@ -97,7 +98,7 @@ function Products(props) {
               <div className='content'>
                 <h3>Pişmiş Ürünler</h3>
                 <p>Uzman ellerde pişirilmiş, ızgara, şiş, kuşbaşı, göğüs, incik, kelebek gibi çeşitlerle zenginleştirdiğimiz taze ve lezzetli ürünlerimizle sofralarınıza keyif katıyoruz.</p>
-                <a href='*' className='btn'> Devamını Gör </a>
+                <a className='btn'><Link to="/bakedProducts"> Devamını Gör </Link></a>
               </div>
               <div className='image'>
                 <img src='images/bakedBoxImage2.jpg' alt='' />
