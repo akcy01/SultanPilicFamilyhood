@@ -125,7 +125,7 @@ function Products(props) {
               <div className='content'>
                 <h3>Mezeler</h3>
                 <p>Renkli ve lezzetli mezelerimiz, damak zevkinize uygun birbirinden özel seçenekler sunuyor. Taze ve doğal malzemelerle hazırlanan mezelerimiz, yemeklerinize eşlik ederken sofralarınıza ferahlık ve lezzet katıyor.</p>
-                <a href='*' className='btn'> Devamını Gör </a>
+                <Link className='btn' to="/appetizerProducts"> Devamını Gör </Link>
               </div>
               <div className='image'>
                 <img src='images/bakedBoxImageAppetizer.jpg' />
