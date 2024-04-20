@@ -17,7 +17,7 @@ function Home(props) {
         homepageIntroductionBackground: "images/homePageIntroduction.png",
         aboutUsBackground: "images/aboutUsBackground.png",
         goalsAndMissionsBackground: "images/goalsAndMissions.png",
-        homeBackground: "images/homePage.png"
+        homeBackground: "images/homePage.png",
     };
 
     if (receivedDataAtNavbar.data !== null) {
@@ -32,6 +32,7 @@ function Home(props) {
         defaultImageRoads.homepageIntroductionBackground = "images/homePageIntroductionMobile.png";
         defaultImageRoads.aboutUsBackground = "images/aboutUsBackgroundMobile.png";
         defaultImageRoads.goalsAndMissionsBackground = "images/goalsAndMissionsMobile.jpg";
+        defaultImageRoads.homeBackground = "images/homePage.png";
     }
     else
         mobileControls.isMobile = false;

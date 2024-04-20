@@ -38,7 +38,7 @@ section {
 }
 
 .home-img img {
-  width: 100%;
+  width: 110%;
   height: auto;
 }
 
@@ -286,6 +286,11 @@ section {
     --big-font: 2.8rem;
     --h2-font: 2rem;
   }
+  .home-img img {
+    width: 100%;
+    height: auto;
+  }
+  
 }
 
 @media (max-width: 440px) {

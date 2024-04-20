@@ -25,7 +25,7 @@ function BakedProducts() {
                 <div className='products-container'>
                     <div className='product' data-name="p-1" onClick={() => showPreview('p-1')}>
                         <img src='images/bakedProducts/KanatSis.jpg' />
-                        <h3>Örnek Ürün</h3>
+                        <h3>Kanat Şiş</h3>
                     </div>
 
                     <div className='product' data-name="p-2" onClick={() => showPreview('p-2')}>
