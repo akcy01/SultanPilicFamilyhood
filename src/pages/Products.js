@@ -112,7 +112,7 @@ function Products(props) {
               <div className='content'>
                 <h3>Çiğ Ürünler</h3>
                 <p>Sağlık ve lezzet arayanların tercihi olan çiğ ürünlerimiz, en taze ve kaliteli malzemelerle hazırlanmıştır. Geniş ürün yelpazemizde bulunan çeşitlerle, her damak zevkine uygun seçenekler sunuyoruz. </p>
-                <a href='*' className='btn'> Devamını Gör </a>
+                <Link className='btn' to="/rawProducts"> Devamını Gör </Link>
               </div>
               <div className='image'>
                 <img src='images/bakedBoxImageRaw.jpg' />

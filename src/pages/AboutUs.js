@@ -48,7 +48,7 @@ function AboutUs(props) {
 
       <section id='trust'>
         <h1>Çalıştığımız Markalar</h1>
-        <p>Sizlere sunduğumuz ürünlerin markaları..</p>
+        <p>Taze tavuklarımızın yanı sıra, tüketiminize sunduğumuz aperatifler ve içecekler</p>
         <div className='trust-img'>
             <img src='images/banvitLogo.png' alt='banvitLogo'/>
             <img src='images/superFresh.png' alt='superFreshLogo'/>
