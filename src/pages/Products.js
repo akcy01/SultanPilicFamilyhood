@@ -115,7 +115,7 @@ function Products(props) {
                 <a href='*' className='btn'> Devamını Gör </a>
               </div>
               <div className='image'>
-                <img src='images/bakedBoxImage2.jpg' />
+                <img src='images/bakedBoxImageRaw.jpg' />
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ function Products(props) {
                 <a href='*' className='btn'> Devamını Gör </a>
               </div>
               <div className='image'>
-                <img src='images/bakedBoxImage3.jpg' />
+                <img src='images/bakedBoxImageAppetizer.jpg' />
               </div>
             </div>
           </div>
